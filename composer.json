@@ -15,6 +15,8 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
+        "psr/log": "^1",
+        "symfony/symfony": "5.4.x",
         "tightenco/ziggy": "^1.4"
     },
     "require-dev": {

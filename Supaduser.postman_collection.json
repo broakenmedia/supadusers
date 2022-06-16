@@ -1,0 +1,253 @@
+{
+	"info": {
+		"_postman_id": "6663fa21-4fc6-4f70-b36b-6e47960f197a",
+		"name": "Supaduser",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create new user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "Joe",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "password_confirm",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "joe@test.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://supadusers.broakenmedia.co.uk/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"supadusers",
+						"broakenmedia",
+						"co",
+						"uk"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://supadusers.broakenmedia.co.uk/api/v1/users/1",
+					"protocol": "http",
+					"host": [
+						"supadusers",
+						"broakenmedia",
+						"co",
+						"uk"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "UpdatedName",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "UpdatedSurname",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password_confirm",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "myupdatedemail@test.com",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://supadusers.broakenmedia.co.uk/api/v1/users/1",
+					"protocol": "http",
+					"host": [
+						"supadusers",
+						"broakenmedia",
+						"co",
+						"uk"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://supadusers.broakenmedia.co.uk/api/v1/users",
+					"protocol": "http",
+					"host": [
+						"supadusers",
+						"broakenmedia",
+						"co",
+						"uk"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "Joeuppp",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Test",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password_confirm",
+							"value": "123456789",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "joe3@test.com",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://supadusers.broakenmedia.co.uk/api/v1/users/21",
+					"protocol": "http",
+					"host": [
+						"supadusers",
+						"broakenmedia",
+						"co",
+						"uk"
+					],
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"21"
+					]
+				},
+				"description": "Example is expecting ID 21. 20 users are created by the system. Example makes assumption that 'Create new user' has been called first. Amend accordingly."
+			},
+			"response": []
+		}
+	]
+}
